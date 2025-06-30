@@ -1,0 +1,47 @@
+@startuml
+annotation java.lang.Override
+class com.mycompany.homecaredt.Communication
+class com.mycompany.homecaredt.HomecareDT
+class com.mycompany.homecaredt.Hygiene
+class com.mycompany.homecaredt.IoTDeviceMonitor
+class com.mycompany.homecaredt.LSO
+class com.mycompany.homecaredt.Nutrition
+class com.mycompany.homecaredt.Person
+class com.mycompany.homecaredt.Transportation
+class com.mycompany.homecaredt.Travel
+class java.io.BufferedReader
+class java.io.InputStreamReader
+class java.net.HttpURLConnection
+class java.net.URL
+class java.time.Duration
+class java.time.LocalDateTime
+class java.time.LocalTime
+class java.time.format.DateTimeFormatter
+class java.time.temporal.ChronoUnit
+class java.util.Scanner
+class java.util.concurrent.Executors
+class java.util.concurrent.ScheduledExecutorService
+class java.util.concurrent.TimeUnit
+com.mycompany.homecaredt.Communication ..> java.lang.Override
+com.mycompany.homecaredt.Communication ..> java.time.LocalDateTime
+com.mycompany.homecaredt.HomecareDT ..> java.time.Duration
+com.mycompany.homecaredt.HomecareDT ..> java.time.LocalDateTime
+com.mycompany.homecaredt.HomecareDT ..> java.time.LocalTime
+com.mycompany.homecaredt.HomecareDT ..> java.time.format.DateTimeFormatter
+com.mycompany.homecaredt.HomecareDT ..> java.time.temporal.ChronoUnit
+com.mycompany.homecaredt.HomecareDT ..> java.util.Scanner
+com.mycompany.homecaredt.HomecareDT ..> java.util.concurrent.Executors
+com.mycompany.homecaredt.HomecareDT ..> java.util.concurrent.ScheduledExecutorService
+com.mycompany.homecaredt.HomecareDT ..> java.util.concurrent.TimeUnit
+com.mycompany.homecaredt.IoTDeviceMonitor ..> java.io.BufferedReader
+com.mycompany.homecaredt.IoTDeviceMonitor ..> java.io.InputStreamReader
+com.mycompany.homecaredt.IoTDeviceMonitor ..> java.net.HttpURLConnection
+com.mycompany.homecaredt.IoTDeviceMonitor ..> java.net.URL
+com.mycompany.homecaredt.IoTDeviceMonitor ..> java.util.concurrent.Executors
+com.mycompany.homecaredt.IoTDeviceMonitor ..> java.util.concurrent.ScheduledExecutorService
+com.mycompany.homecaredt.IoTDeviceMonitor ..> java.util.concurrent.TimeUnit
+com.mycompany.homecaredt.LSO ..> java.lang.Override
+com.mycompany.homecaredt.Person ..> java.lang.Override
+com.mycompany.homecaredt.Transportation ..> java.lang.Override
+com.mycompany.homecaredt.Travel ..> java.lang.Override
+@enduml
